@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    background-color: #0B3D91;
+    border: 2px solid #0B3D91;
+    color: #FFF;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(0, 26, 255);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.button:hover {
+    background-color: rgb(0, 26, 255);
+}
+
+.button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #0B3D91;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #0B3D91;
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.social-media a {
+    color: white;
+    padding-right: 30px;
+    font-size: 1.7em;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 100;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: #0B3D91;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 3px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+
+.title h2 {
+    color: #0B3D91;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+ul li {
+    color: black;
+    letter-spacing: 3px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+
+.title h6 {
+    color: #0B3D91;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Relevant Experience ul li {
+    color: black;
+    letter-spacing: 3px;
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p span {
+    color: #061f49;
+    font-weight: 800;
+}
+
+@media(max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+    .navigation {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 80px 20px;
+    }
+    .main {
+        text-align: center;
+    }
+    .project-card {
+        min-width: 18em;
+    }
+    .card {
+        min-width: 18em;
+    }
+    .footer {
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 10px
+    }
+    .footer .social-media a {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
